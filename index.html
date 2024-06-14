@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Gourmet</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Assurez-vous que le chemin est correct -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .header-image {
+    height: 80vh;
+    position: relative;
+    border-top: 4px solid #343a40;
+    background-size: cover;
+    background-image: url('image/fiambre.jpg')
+        }
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .section h2 {
+            margin-bottom: 2rem;
+        }
+        .menu-card, .service-card, .event-card {
+            margin-bottom: 2rem;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .menu-card:hover, .service-card:hover, .event-card:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar .navbar-brand, .navbar .nav-link {
+            color: white;
+        }
+        .navbar .nav-link:hover {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gourmet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <!-- Header Image -->
+        <div class="header-image">
+            <!-- Header Text -->
+            <div class="header-text">
+                <h1>Bienvenue au Restaurant Gourmet</h1>
+                <p>La meilleure cuisine en ville</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="container section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>À Propos de Nous</h2>
+                    <p>Nous sommes dédiés à offrir une expérience culinaire exceptionnelle avec des ingrédients frais et des recettes innovantes. Nos chefs talentueux mettent tout leur savoir-faire pour créer des plats qui raviront vos papilles.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Section -->
+        <div id="menu" class="container section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Notre Menu</h2>
+                    <p>Découvrez nos plats exquis préparés par des chefs renommés.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card menu-card">
+                        <img src="image/entree.jpeg" class="card-img-top" alt="Dish image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrees</h5>
+                            <p class="card-text">Description de ce plat délicieux avec des détails sur les ingrédients et la préparation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card menu-card">
+                        <img src="image/resistance.jpeg" class="card-img-top" alt="Dish image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Plat de resistance</h5>
+                            <p class="card-text">Description de ce plat délicieux avec des détails sur les ingrédients et la préparation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card menu-card">
+                        <img src="image/dessert.jpeg" class="card-img-top" alt="Dish image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Plat Principal 3</h5>
+                            <p class="card-text">Description de ce plat délicieux avec des détails sur les ingrédients et la préparation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div id="services" class="container section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Nos Services</h2>
+                    <p>Nous offrons une variété de services pour rendre votre expérience culinaire mémorable.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="image/couscous-agneau-dans-sauce-tomate-aigre-douce.avif" class="card-img-top" alt="Service image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Service Traiteur</h5>
+                            <p class="card-text">Nous offrons des services de traiteur pour tous vos événements spéciaux. Profitez de notre expertise culinaire pour impressionner vos invités.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="image/reserve.jpeg" class="card-img-top" alt="Service image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Réservations Privées</h5>
+                            <p class="card-text">Réservez une table pour une soirée spéciale. Nous offrons des espaces privés pour des dîners intimes et des événements privés.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <img src="image/restau.jpeg" class="card-img-top" alt="Service image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Livraison</h5>
+                            <p class="card-text">Profitez de nos plats délicieux chez vous avec notre service de livraison rapide et fiable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Section -->
+        <div id="events" class="container section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Événements</h2>
+                    <p>Découvrez les événements spéciaux que nous organisons tout au long de l'année.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="image/festin.jpeg" class="card-img-top" alt="Event image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">soiree gastronomique</h5>
+                            <p class="card-text">Rejoignez-nous pour une soirée gastronomique avec un menu spécial préparé par notre chef invité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="image/chef.jpeg" class="card-img-top" alt="Event image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cours de cuisine</h5>
+                            <p class="card-text">Participez à notre cours de cuisine et apprenez à préparer des plats raffinés avec notre chef.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card">
+                        <img src="image/promo.jpeg" class="card-img-top" alt="Event image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Offres promotionnelles</h5>
+                            <p class="card-text">Venez célébrer les fêtes avec nous et profitez d'un festin spécial de Noël.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="container section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Contactez-Nous</h2>
+                    <p>Nous serions ravis d'avoir de vos nouvelles. Envoyez-nous un message et nous vous répondrons dès que possible.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script> 
+    <script src="bootstrap/js/popper.min.js"></script> 
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
+</body>
+</html>
